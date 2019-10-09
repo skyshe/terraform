@@ -95,8 +95,8 @@ func TestContext2Validate_varMapOverrideOld(t *testing.T) {
 			},
 		),
 		Variables: InputValues{
-			"foo.foo": &InputValue{
-				Value:      cty.StringVal("bar"),
+			"provider_var": &InputValue{
+				Value:      cty.UnknownVal(cty.String),
 				SourceType: ValueFromCaller,
 			},
 		},
